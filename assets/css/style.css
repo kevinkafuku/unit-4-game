@@ -1,0 +1,33 @@
+body {
+    background-image: url("c:/u-of-r-code/Course-Homework/unit-4-game/assets/images/Zball.jpg");
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.card-header {
+    font-size: 38px;
+}
+
+.card {
+    color:rgba(red, green, blue, alpha);
+    font-size: 24px;
+    border: 10px solid transparent;
+    border-image: url("c:/u-of-r-code/Course-Homework/unit-4-game/assets/images/newnewframe.jpg")30 round;
+    opacity: .60;
+    font-weight: bold;
+    margin: 8px 0px 0px 30px;
+}
+
+img {
+    margin: 30px 12px 30px 40px;
+    width: 104px;
+    height: 97px;
+    border: 1opx solid transparent;
+    border-image: url("c:/u-of-r-code/Course-Homework/unit-4-game/assets/images/newnewframe.jpg")30 round;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-size: 38px;
+}
