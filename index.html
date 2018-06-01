@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dragon Ball Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="c:/u-of-r-code/Course-Homework/unit-4-game/assets/css/style.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="c:/u-of-r-code/Course-Homework/unit-4-game/assets/css/style.css">
-    <script type="text/javscript" src="c:/u-of-r-code/Course-Homework/unit-4-game/assets/javascript/game.js"></script>
 </head>
 <body>
-    <div class="row">
-        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-            <div class="card-header">Dragon Ball Collector</div>
+<div class="row">
+    <div class="my-card my-red-card text-white bg-danger mb-3" style="max-width: 18rem;">
+        <div class="card-header"><h1>Dragon Ball Collector</h1></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="my-card my-yellow-card text-white mb-3" style="max-width: 35rem;">
+        <div class="card-body">
+            <p class="HowToPlay">How To Play</p>
+            <p class="card-text">You will be given a random number at the start of the game.</p>
+            <p class="card-text">There are four Red Dragon-Ball's given to you. By clicking on a Dragon-Ball you will add a specific amount of points to your total score.</p>
+            <p class="card-text">You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+            <p class="card-text">The value of Each Dragon Ball is hidden from you until you click on it.</p>
+            <p class="card-text">Every time the game is reset, the value of each Dragon-Ball will change.</p>
         </div>
     </div>
+
+<div class="col-md-3">
+    <div class="my-card my-green-card text-white bg-success mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+            <h1 class="randomResultHeader"></h1>
+            <p id="result"><h1></h1></p>
+        </div>
+    </div>
+
+    <div class="dragonBalls row">
+    </div>
+
     <div class="row">
-        <div class="card text-white bg-warning mb-3" style="max-width: 35rem;">
+        <div class="col-md-12">
+            <div class="my-card my-card-white bg-light mb-3" style="margin: 0px 0px 0px 55px;max-width: 14rem;">
+                <div class="card-body">
+                    <div class="totalScore">
+                        <p id="previousDBall"><h1></h1></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="my-card my-light-blue-card text-white bg-info mb-3" style="max-width: 14rem;">
             <div class="card-body">
-                <p class="card-text">You will be given a random number at the start of the game.</p>
-                <p class="card-text">There are four Dragon-Ball's below. By clicking on a Dragon-Ball you will add a specific amount of points to your total score.</p>
-                <p class="card-text">You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
-                <p class="card-text">The value of Each Dragon Ball is hidden from you until you click on it.</p>
-                <p class="card-text">Every time the game is reset, the value of each Dragon-Ball will change.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">39</h5>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card text-white bg-info mb-3" style="max-width: 14rem;">
-                <div class="card-body">
-                    <p class="card-text">Wins : 0 </p> 
-                    <p class="card-text">Losses : 0 </p>
+                <div class="Wins">
+                    <p id="userWin"></p>
                 </div>
             </div>
         </div>
     </div>
-        <div class="row">
-            <img src="c:/u-of-r-code/Course-Homework/unit-4-game/assets/images/dragon-ball.jpg">
-            <img src="c:/u-of-r-code/Course-Homework/unit-4-game/assets/images/dragon-ball.jpg">
-            <img src="c:/u-of-r-code/Course-Homework/unit-4-game/assets/images/dragon-ball.jpg">
-            <img src="c:/u-of-r-code/Course-Homework/unit-4-game/assets/images/dragon-ball.jpg">
-        </div>
-        <div class="row">
-            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">
-                    Your Final Score Is :
+    <div class="col-md-12">
+        <div class="my-card my-blue card text-white bg-primary mb-3" style="max-width: 14rem;">
+            <div class="card-body">
+                <div class="Losses">
+                    <p id="userLoss"></p>
                 </div>
             </div>
-            <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">0</h5>
-                <p class="card-text"></p>
-            </div>
         </div>
+    </div>
+    
+</div>
+
+    <script type="text/javascript" src="c:/u-of-r-code/Course-Homework/unit-4-game/assets/javascript/game.js"></script>
 </body>
 </html>
