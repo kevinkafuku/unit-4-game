@@ -19,7 +19,7 @@ var resetAndStartGame = function () {
 
 randomResult = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
 
-    $("#result").text("Random Result: " + randomResult)
+    $("#result").text(randomResult)
 
     for(var i = 0; i < 4; i++){
 
@@ -41,11 +41,11 @@ randomResult = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
 
     }
     
-    $("#previousDBall").text("Total Score: " + previousDBall);
+    $("#previousDBall").text(previousDBall);
 
-    $("#userLoss").text("Losses: " + userLoss);
+    $("#userLoss").text(userLoss);
 
-    $("#userWin").text("Wins: " + userWin);
+    $("#userWin").text(userWin);
 }
 
 resetAndStartGame();
@@ -58,7 +58,7 @@ $(document).on("click", ".dragonBall", function() {
 
     previousDBall += num;
 
-    $("#previousDBall").text("Total Score: " + previousDBall);
+    $("#previousDBall").text(previousDBall);
 
     console.log(previousDBall);
 
@@ -66,7 +66,7 @@ $(document).on("click", ".dragonBall", function() {
 
         userLoss++;
 
-        $("#userLoss").text("Losses " + userLoss);
+        $("#userLoss").text(userLoss);
 
         previousDBall = 0;
 
@@ -77,7 +77,7 @@ $(document).on("click", ".dragonBall", function() {
 
         userWin++;
 
-        $("#userWin").text("Wins: " + userWin);
+        $("#userWin").text(userWin);
 
         previousDBall = 0;
 

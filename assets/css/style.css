@@ -1,82 +1,26 @@
-
-.card-header{
-    font-size: 38px;
-}
-
-
-.my-card {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-clip: border-box;
-    border-radius: .25rem;
-    border-image: url("/assets/images/newnewframe.jpg") 50 round;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: italic;
-    font-size: 24px;
-    border: 10px solid transparent;
-    font-weight: bold;
-    margin: 8px 0px 0px 100px;
-}
-
-.my-yellow-card {
-    background-color: rgb(255, 255, 0, 0.5);
-
-}
-
-.my-green-card {
-    background-color: rgba(31, 255, 1, 0.5);
-
-}
-
-.my-light-blue-card {
-    background-color: rgba(14, 239, 247, 0.5);
-
-}
-
-.my-blue-card {
-    background-color: rgba(0, 0, 255, 0.5);
-}
-.dragonBalls{
+.dragonBalls {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .dragonBall {
-    margin: 50px -55px 32px 69px;
-    width: 134px;
-    height: 134px;
+    border: 1px solid rgb(0, 255, 242);
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    border: solid 68px red;
 }
 
-
-.dragonBall:hover{
-    box-shadow: 8px 8px 8px 8px  rgba(235,252, 3);
+.dragonBall:hover {
     cursor: pointer;
+    box-shadow: 15px 15px 15px rgba(255, 0, 0, 0.89)
 }
 
-.HowToPlay {
-    text-align: center;
-    font-size: 40px;
-    text-decoration: underline;
-}
-
-.img {
-    margin: 30px 12px 30px 81px;
-    width: 134px;
-    height: 134px;
-    border-radius: 50%;
+.card {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
 }
 
 body {
-    background-image: url("c:/u-of-r-code/Course-Homework/unit-4-game/assets/images/Zball.jpg");
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 16px;
-    font-style: italic;
+    background-image: url("https://stmed.net/sites/default/files/dragon-ball-gt-wallpapers-25821-5360611.jpg");
 }
